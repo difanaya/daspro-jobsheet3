@@ -8,6 +8,8 @@ public class Kafe10 {
         double totalHarga;
         double nominalBayar;
         float diskon = 10 / 100f;
+        //f sebagai float , kalau tdk mau pakai f bisa (10 / 100.0) yaitu .0 sbg double
+        
 
         System.out.print("Masukkan keanggotaan (true/false): ");
         keanggotaan = input.nextBoolean();
