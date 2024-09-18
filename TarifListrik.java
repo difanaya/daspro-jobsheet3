@@ -11,10 +11,16 @@ public class TarifListrik {
         
         //2: hitung tarif
         double totalTarif = tarif*totalPenggunaanListrik;
+        boolean pengecekan = totalPenggunaanListrik > 500; 
 
         //3: cek
-        System.out.println("Lebih dari 500 kwh? "+(totalPenggunaanListrik>500));
-        System.out.println("Total tarif = "+totalTarif);
+        System.out.println("Total tarif = "+totalTarif+ " rupiah");
+        if (pengecekan) {
+            System.out.println("Penggunaan listrik anda melebihi 500 kwh");
+        }
+        else {
+            System.out.println("Penggunaan listrik anda tidak melebihi 500 kwh");
+        }
         input.close();
     }
     
